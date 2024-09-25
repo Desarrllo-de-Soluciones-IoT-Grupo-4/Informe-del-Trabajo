@@ -111,23 +111,23 @@ Convertirse en el líder global en soluciones médicas IoT, transformando el enf
 
 **Alonso Fernando Robles Astuñaupa (u202112662)**
 
-![Imgur](https://i.imgur.com/GHaRGNq.png)
+![Imgur](https://i.gyazo.com/7a4f341fc6efabd042029bb98f091bf1.png)
 
 **Erick Armando Cueva Elera (u201910151)**
 
-![Imgur](/Resources/erickC.png)
+![Imgur](https://gyazo.com/91be7877d088730e61825d23ac615210.png)
 
 **Erick Gabriel Urbizagastegui Alvarez (u20201e465)**
 
-![Imgur](/Resources/erickU.png)
+![Imgur](https://gyazo.com/95efd96cf1a3b0392ee5396c5132b4b1.png)
 
 **Mijael Alexander Imanol Yen Quispe (u202010305)**
 
-![Imgur](/Resources/mijael.png)
+![Imgur](https://gyazo.com/ca08a85f2148fc42e011a5fe96ebbfcc.png)
 
 **William Ramos Vicente (u202117904)**
 
-![Imgur](/Resources/william.png)
+![Imgur](https://gyazo.com/526824617254222d1375b2247b950ac0.png)
 
 ## Solution Profile
 
@@ -406,7 +406,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 1**
 
-![Imgur](/Resources/eChristian.png)
+![Imgur](https://gyazo.com/1a44c6a37b8212a1ddec311350295c71.png)
 
 **Nombre:** Cristian Luis Iparraguirre Rueda
 
@@ -416,7 +416,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 2**
 
-![Imgur](/Resources/eLuis.png)
+![Imgur](https://gyazo.com/b4317a618a1007fe1cab004df2c97395.png)
 
 **Nombre:** Luis Trujillo
 
@@ -426,7 +426,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 3**
 
-![Imgur](/Resources/eValeria.png)
+![Imgur](https://gyazo.com/8fb5d37f38b001fe44d718ab6e25f998.png)
 
 **Nombre:** Valeria Nevado
 
@@ -438,7 +438,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 1**
 
-![Imgur](/Resources/eAlessandro.png)
+![Imgur](https://gyazo.com/dc85490b7cd10c17894c17c9f41084fa.png)
 
 **Nombre:** Alessandro Ramiro Condori Lozano
 
@@ -448,7 +448,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 2**
 
-![Imgur](/Resources/eLiliana.png)
+![Imgur](https://gyazo.com/759f83a390c64d75c849a5027d18cd70.png)
 
 **Nombre:** Liliana Fu Ye
 
@@ -458,7 +458,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Entrevista 3**
 
-![Imgur](/Resources/eJoaquin.png)
+![Imgur](https://gyazo.com/82d7bb3f5aceb54abfc6c1fa7b797eec.png)
 
 **Nombre:** Joaquin Pinto
 
@@ -468,7 +468,17 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 ### Análisis de entrevistas 
 
+**Paciente**
 
+- Estadísticas y Aspectos Comunes: Todos los pacientes realizan tratamiento médico y coinciden en que la precisión del dispositivo para medir el ritmo cardiaco es fundamental. Un 33% está interesado en que el dispositivo funcione durante el sueño.
+- Características Objetivas: La precisión es la prioridad, junto con la comodidad y facilidad de uso del dispositivo.
+- Características Subjetivas: Todos los entrevistados expresan miedo a fallos en el dispositivo, ya sea por lecturas incorrectas o por no registrar los datos.
+
+**Contacto de Emergencia**
+
+- Estadísticas y Aspectos Comunes: El 67% de los entrevistados reciben información sobre el paciente a través de informes médicos. Todos consideran esencial que el dispositivo registre las pulsaciones diarias para detectar anomalías y que notifique al médico y al responsable ante cualquier irregularidad.
+- Características Objetivas: Es necesario implementar un sistema de registro y notificación para abordar las inquietudes de los familiares.
+- Características Subjetivas: Existe una preocupación generalizada sobre la posibilidad de que las alertas ante anomalías no lleguen a tiempo, lo que podría poner en riesgo al paciente.
 
 ## Needfinding
 
@@ -480,12 +490,12 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Contacto de emergencia**
 
-![Image from Gyazo](https://i.gyazo.com/5138273c81832215e01cbef18d956587.png)(https://gyazo.com/5138273c81832215e01cbef18d956587)
+![Image from Gyazo](https://i.gyazo.com/5138273c81832215e01cbef18d956587.png)
 
 ### User Task Matrix
 
-![Imgur](/Resources/userTaskMatrix1.png)
-![Imgur](/Resources/userTaskMatrix2.png)
+![Imgur](https://gyazo.com/5b492e6ba012ccd4bf0fb4bad59cde22.png)
+![Imgur](https://gyazo.com/2ca018cba74c163b221d62131de83e68.png)
 
 ### User Journey Mapping
 
@@ -495,21 +505,21 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Paciente**
 
-![Imgur](/Resources/eMap1.png)
+![Imgur](https://gyazo.com/1097f897c71024c9e04e6672ec54cbaf.png)
 
 **Contacto de emergencia**
 
-![Imgur](/Resources/eMap2.png)
+![Imgur](https://gyazo.com/1c5a899801d51c96ab4ed92d17bdc5c6.png)
 
 ### As-is Scenario Mapping
 
 **Paciente**
 
-![Imgur](/Resources/aSM1.png)
+![Imgur](https://gyazo.com/039309e7c188655865f17e871f7dab11.png)
 
 **Contacto de emergencia**
 
-![Imgur](/Resources/aSM2.png)
+![Imgur](https://gyazo.com/6165e99c08663e609ac4624d5ee1eaa9.png)
 
 ## Ubiquitous Language
 
@@ -527,18 +537,18 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 **Paciente**
 
-![Imgur](/Resources/tBM1.png)
+![Imgur](https://gyazo.com/260dc8cc8ce6d027fb6541d192149e94.png)
 
 **Contacto de emergencia**
 
-![Imgur](/Resources/tBM2.png)
+![Imgur](https://gyazo.com/2394618b4432fbba25b57f7c268d640e.png)
 
 ### User Stories
 
-![Imgur](/Resources/us1.png)
-![Imgur](/Resources/us2.png)
-![Imgur](/Resources/us3.png)
-![Imgur](/Resources/us4.png)
+![Imgur](https://gyazo.com/36573eca70e8ee65eaa1dfce312d462b.png)
+![Imgur](https://gyazo.com/6a50e6414d8d71e9d7fec6619e7072b7.png)
+![Imgur](https://gyazo.com/aacf2a5b8853773715fb609177239a9b.png)
+![Imgur](https://gyazo.com/aaf0f57a9b88d1c2691979a3c549fc3c.png)
 
 ### Impact Mapping
 
@@ -546,9 +556,9 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 ### Product Backlog
 
-![Imgur](/Resources/pb1.png)
-![Imgur](/Resources/pb2.png)
-![Imgur](/Resources/pb3.png)
+![Imgur](https://gyazo.com/f9916942332cbdd2a3233694ead8d05e.png)
+![Imgur](https://gyazo.com/741a42aca40c1b5eb8f8b0a3fbb1733e.png)
+![Imgur](https://gyazo.com/716b7fe4c3c3bddfe6d310ed593d3403.png)
 
 # Capítulo IV: Solution Software Design
 
@@ -560,10 +570,10 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 Durante el proceso se realizaron los siguientes pasos: identificación de los eventos claves del negocio; identificación de acciones de los actores; identificación de disparadores e identificación de bounded contexts.
 
-![Imgur](/Resources/ccd1.png)
-![Imgur](/Resources/ccd2.png)
-![Imgur](/Resources/ccd3.png)
-![Imgur](/Resources/ccd4.png)
+![Imgur](https://gyazo.com/a59d5f5964a07d3ae97d07a394488fed.png)
+![Imgur](https://gyazo.com/332b2fbe54a67076663471f30981f8c5.png)
+![Imgur](https://gyazo.com/0f205d6394348c3f53e7d3befc068b57.png)
+![Imgur](https://gyazo.com/b02234b674b905471a2f6e84b0333583.png)
 
 #### Domain Message Flows Modeling
 
@@ -572,6 +582,8 @@ Durante el proceso se realizaron los siguientes pasos: identificación de los ev
 Primero el BC de Gestión del sensor deberá preparar este para medir el ritmo cardiaco; luego el paciente insertará su dedo en el dispositivo y el BC de Monitoreo del paciente recopilará la data, para posteriormente avisar al BC Notificaciones que avise a los contactos de emergencia del paciente.
 
 #### Bounded Context Canvases
+
+
 
 ### Context Mapping
 
