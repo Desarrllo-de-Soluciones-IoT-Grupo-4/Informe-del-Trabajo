@@ -30,7 +30,8 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |--------------|--------------|--------------|--------------|
-| 1           | 05/09/2023      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del capítulo 1 al 4      |
+| 1           | 05/09/2024      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del capítulo 1 al 4      |
+| 2           | 25/09/2024      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del capítulo 5 y 6. Correcciones de la entrega pasada.      |
 
 # Contenido
 
@@ -78,7 +79,54 @@
     - [Context Mapping](#context-mapping)
     - [Software Architecture](#software-architecture)
       - [Software Architecture System Landscape Diagram](#software-architecture-system-landscape-diagram)
+      - [Software Architecture Context Level Diagrams](#software-architecture-context-level-diagrams)
       - [Software Architecture Container Level Diagrams](#software-architecture-container-level-diagrams)
+      - [Software Architecture Deployment Diagrams](#software-architecture-deployment-diagrams)
+  - [Tactical-Level Domain-Driven Design](#tactical-level-domain-driven-design)
+    - [Bounded Context: Authentication](#bounded-context-authentication)
+      - [Domain Layer](#domain-layer)
+      - [Interface Layer](#interface-layer)
+      - [Application Layer](#application-layer)
+      - [Infrastructure Layer](#infrastructure-layer)
+      - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams)
+      - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams)
+        - [Bounded Context Domain Layer Class Diagram](#bounded-context-domain-layer-class-diagram)
+        - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram)
+- [Solution UI/UX Design](#solution-uiux-design)
+  - [Style Guidelines](#style-guidelines)
+    - [General Style Guidelines](#general-style-guidelines)
+    - [Web, Mobile and IOT Style Guidelines](#web-mobile-and-iot-style-guidelines)
+  - [Information Architecture](#information-architecture)
+    - [Organization Systems](#organization-systems)
+    - [Labeling Systems](#labeling-systems)
+    - [SEO Tags and Meta Tags](#seo-tags-and-meta-tags)
+    - [Navigations Systems](#navigations-systems)
+    - [Searching Systems](#searching-systems)
+  - [Landing Page UI](#landing-page-ui)
+    - [Landing Page Wireframe](#landing-page-wireframe)
+    - [Landing Page Mock-up](#landing-page-mock-up)
+  - [Applications UX/UI Design](#applications-uxui-design)
+    - [Applications Wireframes](#applications-wireframes)
+    - [Applications Wireflow Diagram](#applications-wireflow-diagram)
+    - [Applications Mock-ups](#applications-mock-ups)
+    - [Applications User Flow Diagrams](#applications-user-flow-diagrams)
+  - [Applications Prototyping](#applications-prototyping)
+- [Product Implementation, Validation \& Deployment](#product-implementation-validation--deployment)
+  - [Software Configuration Management](#software-configuration-management)
+    - [Software Development Environment Configuration](#software-development-environment-configuration)
+    - [Source Code Management](#source-code-management)
+    - [Source Code Style Guide \& Conventions](#source-code-style-guide--conventions)
+    - [Software Deployment Configuration](#software-deployment-configuration)
+  - [Landing Page, Services \& Applications Implementation](#landing-page-services--applications-implementation)
+    - [Aprint 1](#aprint-1)
+      - [Sprint Planning 1](#sprint-planning-1)
+      - [Sprint Backlog 1](#sprint-backlog-1)
+      - [Development Evidence for Sprint Review](#development-evidence-for-sprint-review)
+      - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review)
+      - [Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review)
+      - [Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review)
+      - [Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review)
+      - [Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -87,8 +135,8 @@
 
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>|**TB1**<br><br>CONCLUSION<br><br>|
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>| **TB1**<br><br>CONCLUSION<br><br> |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>|**TB1**<br><br>CONCLUSION<br><br>|
+| <br>**TB1**<br><br>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.<br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma. | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>| **TB1**<br><br>CONCLUSION<br><br><br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma. |
 
 # Capítulo I: Introducción
 
@@ -552,7 +600,7 @@ El video de las entrevistas fue subido a Microsoft Stream. Podrá acceder a este
 
 ### Impact Mapping
 
-
+![](https://gyazo.com/231f21636b49c36884e6348c4da35333.png)
 
 ### Product Backlog
 
@@ -583,31 +631,403 @@ Primero el BC de Gestión del sensor deberá preparar este para medir el ritmo c
 
 #### Bounded Context Canvases
 
-
+![Imgur](https://gyazo.com/add89067458602ed57446a1c90276476.jpeg)
+![Imgur](https://gyazo.com/eb3460c889f4506e6061c7bbbc04d53e.jpeg)
 
 ### Context Mapping
 
 A continuación, se presenta el context mapping elaborado para nuestra solución. Este representa el cómo se comportan y colaboran los BC entre sí y de qué depende que esto suceda.
 
-![Imgur](/Resources/cm.png)
+![Imgur](https://gyazo.com/c67ec3acd12e1d4204655b37fdaec698.png)
 
 ### Software Architecture
 
 #### Software Architecture System Landscape Diagram
 
-![Imgur](/Resources/dc.png)
+![Imgur](https://gyazo.com/02332071c2253fbb2b399376bfbb0bd0.jpg)
+
+#### Software Architecture Context Level Diagrams
+
+![Imgur](https://gyazo.com/4423fb04db9e9fcbf64e72f00e893d81.jpg)
 
 #### Software Architecture Container Level Diagrams
 
-![Imgur](/Resources/dcon.png)
+![Imgur](https://gyazo.com/ae2e0c43b6df100060bfb2fefbd8015a.jpg)
+
+#### Software Architecture Deployment Diagrams
+
+![Imgur](https://gyazo.com/9e0827e933d50b77d105db76c12fb68e.jpg)
+
+## Tactical-Level Domain-Driven Design
+
+### Bounded Context: Authentication
+
+#### Domain Layer
+
+![Imgur](https://gyazo.com/4875ff1a473e0047fa056e33b542460c.png)
+
+**User**
+
+![Imgur](https://gyazo.com/c9bbd823d229b8e1d34d8141c5f11b40.png)
+![Imgur](https://gyazo.com/2fd76002d03a094e748de85d5d984627.png)
+
+**Role**
+
+![Imgur](https://gyazo.com/447ee49beeed44885e48289a3d4f9ced.png)
+![Imgur](https://gyazo.com/b7367159fd3710504ada094be4c6e412.png)
+
+**AuthToken**
+
+![Imgur](https://gyazo.com/ce6c06ea3ba82113e869ee3a7ff787e0.png)
+![Imgur](https://gyazo.com/595bfb6a76bfbc6bd4cf6e664017f18f.png)
+
+#### Interface Layer
+
+![Imgur](https://gyazo.com/ee4fe0b30d271f917e7478e9f8cc6de9.png)
+
+**UserController**
+
+![Imgur](https://gyazo.com/7330d1cbb55bdb12919a3ade8ca710d4.png)
+
+**RoleController**
+
+![Imgur](https://gyazo.com/69c32f074d6361026cbebac2ec93ea4c.png)
+
+#### Application Layer
+
+![Imgur](https://gyazo.com/e8407bab218c76b451b5f317f47c3aeb.png)
+
+#### Infrastructure Layer
+
+![Imgur](https://gyazo.com/ba5a9be1a935777be35a26936afdc52a.png)
+
+**UserRepository**
+
+![Imgur](https://gyazo.com/0051815e03c8434c3473e30d44adf733.png)
+
+**RoleRepository**
+
+![Imgur](https://gyazo.com/324e54df6b895b5a7b8061c97d6b8fcd.png)
+
+#### Bounded Context Software Architecture Component Level Diagrams
+
+![](https://gyazo.com/e61238a3bec30b675025fc1d4893d85b.png)
+
+#### Bounded Context Software Architecture Code Level Diagrams
+
+##### Bounded Context Domain Layer Class Diagram
+
+![](https://gyazo.com/e9e459e213f28c94b880f37ceb01ab64.png)
+
+##### Bounded Context Database Design Diagram
+
+![](https://gyazo.com/218a88320337aa76d94c3d7d2f312620.png)
+
+# Solution UI/UX Design
+
+## Style Guidelines
+
+### General Style Guidelines
+
+**Overview**
+
+Nuestro objetivo es captar la atención del usuario desde la primera interacción, mediante la creación de una interfaz con un diseño tanto atractivo visualmente como intuitivo, de esta forma logrando una conexión inmediata y reconocible con MedSync.
+
+**Brand Name**
+
+Se optó por el nombre de “MedSync” dado su enfoque y la simpleza de su pronunciación a la vez de su recordatorio.
+
+**Typography**
+
+Se seleccionaron cuidadosamente la fuente “Montserrat” con la finalidad de transmitir una imagen moderna, elegante y legible.
+
+![](https://gyazo.com/0c8113f6214cd6ee23d07531831bd732.png)
+
+**Colors**
+
+Los colores principales son el cian oscuro y el blanco. El cian oscuro nos fue seleccionado dado por la asociación a la calma, la confianza y la modernidad, aspectos claves de la solución. Este color demuestra nuestro compromiso de ofrecer soluciones tanto innovadoras como confiables. Por otro lado, el blanco se utiliza como predominante para el fondo, dado que muestra un contraste limpio y elegante, resaltando la claridad y simplicidad.
+
+![](https://gyazo.com/11b11b6ca5d8c12b89a954e787221553.png)
+
+**Spacing**
+
+Hemos establecido niveles de espacio para garantizar un aspecto equilibrado y experiencia visual agradable, los valores van desde 8px hasta los 96px.
+
+![](https://gyazo.com/3c5f98aa320feffbf7c1943c1ab0865c.png)
+
+**Buttons**
+
+Se distribuye en 3 tipos de botones que están en relación del tamaño en general y tamaño de la letra.
+
+![](https://gyazo.com/5f94a50a37b600d1590c7ae747919ff2.png)
+
+### Web, Mobile and IOT Style Guidelines
+
+MedSync se basará en una aplicación de web, se optó por el uso de los principios del Web Responsive Design, dado que tiene como finalidad mostrar la información en relación al tamaño de la ventana; de esta manera, garantizando que el contenido no sufra variaciones. También, existe la versión para móviles.
+
+![](https://gyazo.com/8a14ca3c0febf88950fd604911dbbc16.png)
+
+Del mismo modo, como equipo, tomamos la decisión de emplear el patrón de diseño en forma de Z, puesto que está técnica mejora de forma efectiva la experiencia del usuario dado que brindan una jerarquía visual además de centrar la atención del usuario en elementos claves.
+
+![](https://gyazo.com/f82695e6fc460b1d4d9bf9f152d84d1c.png)
+
+Por otro lado, se tomará en cuenta el principio de Hick ya que reduce en gran medida el tiempo de toma de decisión por parte de nuestros usuarios; esto es posible gracias a la optimización de nuestras funcionalidades a brindar mediante opciones claras y limitadas.
+
+## Information Architecture
+
+### Organization Systems
+
+Como sistema de organización, hemos optado por una mezcla entre un sistema secuencial (step-by-step to accomplish) y un sistema de forma jerárquica (visual hierarchy). Esto debido a que contamos con segmentos que merecen la importancia jerárquica y también con segmentos en donde el usuario deberá seguir con un camino para lograr su objetivo.
+
+### Labeling Systems
+
+Los labels que hemos utilizado para nuestro proyecto son: 
+- Landing Page: Inicio, Sobre nosotros, Especificaciones, Contacta con nosotros.
+- Aplicación: Frecuencia cardíaca, Registro cardíaco, Contacto de emergencia, Perfil.
+
+### SEO Tags and Meta Tags
+
+![](https://gyazo.com/b0a16152226b299121bc39722aafeab5.png)
+
+### Navigations Systems
+
+¿Qué se busca?: El usuario quiere saber las especificaciones del dispositivo.
+¿Cómo lo logra?: El usuario deberá dirigirse al apartado de Especificaciones en la landing page mediante scroll o la barra de navegación..
+
+¿Qué se busca?: El usuario quiere saber más acerca del equipo detrás del proyecto.
+¿Cómo lo logra?: El usuario deberá desplazarse hasta la sección de Sobre Nosotros en la landing page mediante scroll o la barra de navegación.
+
+
+¿Qué se busca?: El usuario quiere revisar y descargar el historial cardiaco del paciente.
+¿Cómo lo logra?: El usuario deberá dirigirse a la sección de Registro Cardiaco en la aplicación, donde podrá revisar el historial de la frecuencia cardiaca en un lapso determinado y también podrá descargarlo.
+
+¿Qué se busca?: El usuario desea editar sus contactos de emergencia.
+¿Cómo lo logra?: El usuario deberá dirigirse a la sección de Contactos de Emergencia en la aplicación, donde podrá añadir y editar los contactos de emergencia.
+
+### Searching Systems
+
+La navegación dentro de la landing page será mediante el scroll con el mouse o mediante los botones situados en la barra de navegación ubicada en la parte superior.
+
+La navegación dentro de la aplicación se basará en el manejo de secciones mediante los labels en la barra de navegación.
+
+## Landing Page UI
+
+### Landing Page Wireframe
+
+![](https://gyazo.com/033fc1551385d391c3e81962855b4e52.png)
+![](https://gyazo.com/da868eb27409555b57a11fc8f087640c.png)
+
+### Landing Page Mock-up
+
+![](https://gyazo.com/33d4469ad2f501ad9fa22538de4a97c4.jpeg)
+![](https://gyazo.com/c0532a36f2a94614d259745f9434f4e8.jpeg)
+![](https://gyazo.com/d8e2fb855639a1a08a32726bde440949.jpeg)
+![](https://gyazo.com/c76c0b6daf62a458264a6cdb24646733.jpeg)
+
+## Applications UX/UI Design
+
+### Applications Wireframes
+
+![](https://gyazo.com/6478fc9aa016a60ae40cc7d713f7b320.png)
+![](https://gyazo.com/0d5c7ecc0c158d151dc3dbb9e7b2c107.png)
+
+### Applications Wireflow Diagram
+
+**Revisar pulso cardiaco**
+
+![](https://gyazo.com/b3af46f53ae69d57c020db5f6f81f1c8.png)
+
+**Registrarse en la aplicación**
+
+![](https://gyazo.com/67412a190bc794e5cb5663997d90ab1f.png)
+
+**Revisar historial diario**
+
+![](https://gyazo.com/c96d158cad4ef0fb041cdaf66a309018.png)
+
+**Ver y editar perfil**
+
+![](https://gyazo.com/8ea2fc756aab656b34d3aa6025ee66d4.png)
+
+**Ver datos de contacto de emergencia**
+
+![](https://gyazo.com/297f553694edda6c01e8e4b4af765172.png)
+
+### Applications Mock-ups
+
+![](https://gyazo.com/c99ed166e6c61ac914dcce6acd8157c7.png)
+![](https://gyazo.com/4978fdbd174ee9bc77530795080a9310.png)
+
+### Applications User Flow Diagrams
+
+**Revisar pulso cardiaco**
+
+![](https://gyazo.com/bc3a8342f5a16595c95bacdd720638ea.png)
+
+**Registrarse en la aplicación**
+
+![](https://gyazo.com/21886d32e3a282a6f7003a40878bf400.png)
+
+**Revisar historial diario**
+
+![](https://gyazo.com/fa756c53214fd29ea04e60b651916aaa.png)
+
+**Ver y editar perfil**
+
+![](https://gyazo.com/935206ec578a7d2febe3284b2013f082.png)
+
+**Ver datos de contacto de emergencia**
+
+![](https://gyazo.com/b685d1b651d422c377c024d41e5a5a84.png)
+
+## Applications Prototyping
+
+![](https://gyazo.com/bb8f83c089f9810575bca31c33730f4f.png)
+
+**Link del prototipo:** [https://www.figma.com/proto/cf3yKXcnu0z0nXSdqhNfIo/AndroidPrototype-(Copy)?node-id=11-547&node-type=canvas&t=9qykzaIHyC1JXwIN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A547](https://www.figma.com/proto/cf3yKXcnu0z0nXSdqhNfIo/AndroidPrototype-(Copy)?node-id=11-547&node-type=canvas&t=9qykzaIHyC1JXwIN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A547)
+
+# Product Implementation, Validation & Deployment
+
+## Software Configuration Management
+
+### Software Development Environment Configuration
+
+Project Management:
+- Repositorio del informe general:
+  https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/Informe-del-Trabajo 
+
+- GitHub: 
+  Servicio web y en la nube que ayuda a los desarrolladores a almacenar y administrar su código para llevar el control de cambios de versiones Git.
+
+Requirements Management:
+- Trello (https://trello.com/es):
+  Esta herramienta permite a nuestro equipo gestionar nuestro proyecto y flujo de trabajo, así mismo nos permite asignarnos tareas y personalizar según nuestras necesidades.
+
+- UXPressia (https://uxpressia.com):
+  Esta herramienta permite la creación fácil y rápida de mapas de empatía, journey maps, perfiles de usuarios de forma online.
+
+- Figma (https://www.figma.com/es-la/):
+  Herramienta para la creación de diseño de interfaces, ofreciendo desde plantillas hasta imágenes y formas que ayudarán a con la creación. Asimismo, nos permite desarrollar un prototipo de la solución, únicamente basado en los bocetos hechos. 
+
+- Miro (https://miro.com/es/):
+  Herramienta para la creación de contenido visual de cualquier tipo, ofreciendo diversos servicios desde plantillas como contenido propio de la página brindada. Asimismo, brindando conexiones con otras plataformas.
+
+- Discord (https://discord.com) y  Whatsapp (https://www.whatsapp.com/?lang=es_LA):
+  Medios principales de comuniones entre los integrantes del equipo, destacando la difusión de mensajes al igual para la realización de las reuniones, asimismo, organizando grupos de estudios y trabajo.
+
+Product UX/UI Design:
+- HTML: 
+  Alto impacto en el desarrollo de aplicaciones web, proporciona la estructura base de la que se rige la solución.
+
+- CSS:
+  Lenguaje utilizado para ordenar el diseño de las páginas web y para la presentación del contenido de forma visualmente atractiva 
+
+- GitHub: 
+  Reiterar su función como servicio de almacenamiento y control sobre el avance del contenido de la propuesta de solución. 
+
+### Source Code Management
+
+Como anteriormente se mencionó, se hará uso de GitHub como sistema de almacenamiento y control de versiones. Por ello se crearon los diversos repositorios que contendrán información valiosa de la propuesta de solución:
+
+- Repositorio Landing Page: [https://github.com/EUrbizagastegui/MedSync-Landing-Page](https://github.com/EUrbizagastegui/MedSync-Landing-Page)
+
+Del mismo modo, se trabajará bajo la metodología de GitFlow, la cual nos permitirá trabajar de forma más eficiente en el trabajo colaborativo:
+
+- Rama Main: Encargado de contener el código fuente para su uso en producción.
+
+- Rama Feature: Principal función de desarrollar las nuevas funcionalidades del proyecto, tiene como base a la rama Main. Asimismo, una vez culminado su labor, la rama se fusionará con la rama principal.
+
+- Rama Testing: Función primordial de desarrollar las distintas pruebas para la validación del correcto funcionamiento de los implementados en el transcurso de la solución.
+
+- Rama Hotfix: Función de corregir rápidamente los problemas o errores que se originaron en el código base.
+
+### Source Code Style Guide & Conventions
+
+HTML:
+- Index.html: este source code en HTML establecerá la estructura del Landing Page.
+
+CSS:
+- Main.css: este source code en CSS se integrará al source code de HTML en el diseño del Landing Page 
+- Base.css: este source code en CSS se integrará al source code de HTML en el diseño del Landing Page 
+- Fonts.css: este source code en CSS se integrará al source code de HTML en el diseño del Landing Page 
+- Vendor.css: este source code en CSS se integrará al source code de HTML en el diseño del Landing Page 
+
+JavaScript:
+- Jquery-2.1.3.min.js: Este archivo mejora la experiencia del usuario en el Landing Page.
+- main.js: main.js es un archivo de código fuente fundamental para el funcionamiento del Landing Page en AutoYa!. 
+- modernizr.js: modernizr.js garantiza una experiencia coherente y eficiente en diferentes navegadores.
+- pace.min.js: Esto ayuda a los usuarios a comprender cuándo se ha completado la carga del sitio web. En AutoYa!, pace.min.js mejora la percepción del rendimiento del sitio y la experiencia de usuario.
+- plugins.js: Este archivo contiene plugins y extensiones de JavaScript que se utilizan en diversas partes del Landing Page.
+
+**Convenciones generales**
+
+![](https://gyazo.com/220678fda348468a1769f01e3aa42923.png)
+
+**Convenciones del formato HTML**
+
+![](https://gyazo.com/db20d0f830cb1bc2b3a0b0aba3e35ad3.png)
+
+**Convenciones del formato CSS**
+
+![](https://gyazo.com/841bbab81fecc222044914681bd68f31.png)
+
+### Software Deployment Configuration
+
+Para la implementación del despliegue ya sea tanto para el Landing Page como la Aplicación Web en sí, se hará uso de la plataforma “Vercel” dado que esta nos facilita tanto la configuración como la automatización de cambios en futuras ediciones.
+
+![](https://gyazo.com/f97a5431f484035cc4ce23976b7d20b9.png)
+
+## Landing Page, Services & Applications Implementation
+
+### Aprint 1
+
+#### Sprint Planning 1
+
+![](https://gyazo.com/6161e54401dea4abe089243aa15cbf66.png)
+
+#### Sprint Backlog 1
+
+![](https://gyazo.com/ae96e0de935a70ab38ed6154dad24e68.png)
+
+#### Development Evidence for Sprint Review
+
+![](https://gyazo.com/b8a24d7a8d53de0aaca54d9cecf043e2.png)
+
+#### Testing Suite Evidence for Sprint Review
+
+Al ser un landing page, no se requiere de una suite de pruebas para su desarrollo.
+
+#### Execution Evidence for Sprint Review
+
+En esta entrega desarrollamos y desplegamos la landing page.
+
+**Link del landing page desplegado:** [https://med-sync-landing-page.vercel.app/](https://med-sync-landing-page.vercel.app/)
+
+![](https://gyazo.com/ad2dc99e42ab95769c6bed12f2042d06.png)
+
+#### Services Documentation Evidence for Sprint Review
+
+Al tratarse de una landing page, no requiere documentación de servicios.
+
+#### Software Deployment Evidence for Sprint Review
+
+En este sprint, desarrollamos la landing page del proyecto, para la cual usamos los siguientes recursos:
+- Github: Utilizado como repositorio para almacenar el código
+  desarrollado y facilitar el control de versión para el equipo.
+- Vercel: Utilizado como plataforma para el despliegue de nuestra
+  landing page. 
+
+#### Team Collaboration Insights during Sprint
+
+![](https://gyazo.com/548cda9f0b4b39e5fa1ab6ed5d1d7d69.png)
 
 # Conclusiones
 
-
+- Realizar una correcta detección de bounded contexts es crucial para poder identificar los servicios que se desarrollarán en la solución.
+- Estudiar el escenario en el que se empleará el software es vital para decidir el tipo de arquitectura que se empleará.
+- El alcance del proyecto debe ser bien definido para tener una idea clara de qué dispositivos se necesitarán adquirir para lograr este.
 
 # Bibliografía
-
-
 
 # Anexos
 
