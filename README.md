@@ -24,7 +24,7 @@
   <li>William Ramos Vicente (u202117904)</li>
 </ul>
 
-**<h3>Setiembre, 2024</h3>**
+**<h3>Noviembre, 2024</h3>**
 
 # Registro de Versiones del Informe
 
@@ -32,6 +32,7 @@
 |--------------|--------------|--------------|--------------|
 | 1           | 05/09/2024      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del capítulo 1 al 4      |
 | 2           | 25/09/2024      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del capítulo 5 y 6. Correcciones de la entrega pasada.      |
+| 3           | 02/11/2024      | - Alonso Fernando Robles Astuñaupa<br>- Erick Armando Cueva Elera<br>- Erick Gabriel Urbizagastegui Alvarez<br>- Mijael Alexander Imanol Yen Quispe<br>- William Ramos Vicente    | Implementación del sprint 2. Correcciones de la entrega pasada.      |
 
 # Contenido
 
@@ -127,6 +128,15 @@
       - [Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review)
       - [Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review)
       - [Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint)
+    - [Sprint 2](#sprint-2)
+      - [Sprint Planning 2](#sprint-planning-2)
+      - [Sprint Backlog 2](#sprint-backlog-2)
+      - [Development Evidence for Sprint Review](#development-evidence-for-sprint-review-1)
+      - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-1)
+      - [Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review-1)
+      - [Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review-1)
+      - [Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review-1)
+      - [Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint-1)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -135,8 +145,8 @@
 
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>|**TB1**<br><br>CONCLUSION<br><br>|
-| <br>**TB1**<br><br>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.<br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma. | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>| **TB1**<br><br>CONCLUSION<br><br><br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>**TB2**<br><br>*Alonso Robles*<br><br>Elaboré el apartado de perfil de usuario de la app web.<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré la mobile app.<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré el login y el home de la web app.<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré la documentación del proyecto.<br><br>*William Ramos Vicente*<br><br>Elaboré el backend de MedSync.<br><br>| **TB1**<br><br>Se planteó la problemática y el giro del negocio. Para esto investigamos acerca del estado actual de esta problemática, identificamos segmentos objetivo y los entrevistamos para obtener sus opiniones.<br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma.<br><br>**TB2**<br><br>Se empezó con el desarrollo de la web app, mobile app y backend.|
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **TB1**<br><br>*Alonso Robles*<br><br>Elabore los as y to be scenario mapping<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré los user persona<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la arquitectura de la solución<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los diagramas de bounded contexts y entrevistas<br><br>*William Ramos Vicente*<br><br>Elaboré el diseño de las entrevistas y su análisis<br><br>**TP1**<br><br>*Alonso Robles*<br><br>Elaboré los style guidelines y software configuration management.<br><br>*Erick Armando Cueva Elera*<br><br>Elabore el sprint backlog<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré la Landing Page<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré los mockups y wireframes<br><br>*William Ramos Vicente*<br><br>Corregir la arquitectura de software (base de datos y diagramas de clases)<br><br>**TB2**<br><br>*Alonso Robles*<br><br>Elaboré el apartado de perfil de usuario de la app web.<br><br>*Erick Armando Cueva Elera*<br><br>Elaboré la mobile app.<br><br>*Erick Gabriel Urbizagastegui Alvarez*<br><br>Elaboré el login y el home de la web app.<br><br>*Mijael Alexander Imanol Yen Quispe*<br><br>Elaboré la documentación del proyecto.<br><br>*William Ramos Vicente*<br><br>Elaboré el backend de MedSync.<br><br>| **TB1**<br><br>Se planteó la problemática y el giro del negocio. Para esto investigamos acerca del estado actual de esta problemática, identificamos segmentos objetivo y los entrevistamos para obtener sus opiniones.<br><br>**TP1**<br><br>Se desarrolló el diseño de la aplicación más el Landing page de esta misma.<br><br>**TB2**<br><br>Se empezó con el desarrollo de la web app, mobile app y backend.|
 
 # Capítulo I: Introducción
 
@@ -1021,6 +1031,70 @@ En este sprint, desarrollamos la landing page del proyecto, para la cual usamos 
 
 ![](https://gyazo.com/548cda9f0b4b39e5fa1ab6ed5d1d7d69.png)
 
+### Sprint 2
+
+#### Sprint Planning 2
+
+![](https://gyazo.com/0eeac028cfe64d9aa3741db2f9dd19b6.png)
+
+#### Sprint Backlog 2
+
+![](https://gyazo.com/514b30db0a9f5303f19a149a6dc5394c.png)
+
+#### Development Evidence for Sprint Review
+
+![](https://gyazo.com/1b5bed88235f6170fdbaf779b78d9edd.png)
+
+#### Testing Suite Evidence for Sprint Review
+
+Para el término de esta entrega, no se desarrolló este apartado.
+
+#### Execution Evidence for Sprint Review
+
+**FrontEnd**
+
+![](https://gyazo.com/c13513071523aef41f9bf0d056a5db3a.png)
+![](https://gyazo.com/1be0b49495ed35f1278c95de42d1c709.png)
+![](https://gyazo.com/d5dff5bb723f4dee76da6944e9548ad0.png)
+![](https://gyazo.com/7e36cf98419f81ec05722be84c930341.png)
+
+**Mobile**
+
+![](https://gyazo.com/e4810b2e77280012afc03d5f7a9164f3.png)
+![](https://gyazo.com/cb5c3d3325435da4db315c1aa9471319.png)
+![](https://gyazo.com/e2d0dcc6ff0b291c1a1fe8a5d69511f2.png)
+![](https://gyazo.com/79bb333f6138de65b891fb866c61edf2.png)
+
+#### Services Documentation Evidence for Sprint Review
+
+Link del Swagger: [https://medsync-api.up.railway.app/swagger-ui/index.html#/](https://medsync-api.up.railway.app/swagger-ui/index.html#/)
+
+![](https://gyazo.com/b5d9af13f6fa175b860e271689b5f119)
+
+#### Software Deployment Evidence for Sprint Review
+
+En el presente Sprint se desplegó el backend del proyecto en Railway, según los pasos especificados en la configuraciones de software. A continuación, se presenta la evidencia del despliegue:
+
+Link del Backend: [https://medsync-api.up.railway.app/swagger-ui/index.html#/ ](https://medsync-api.up.railway.app/swagger-ui/index.html#/)
+
+![](https://gyazo.com/7e32d0acd5df976b4eb048ce4205e6b5.png)
+
+Asimismo, se desplegó la primera versión del frontend en Vercel
+
+Link del frontend: [https://med-sync-frontend-4bb8.vercel.app/login](https://med-sync-frontend-4bb8.vercel.app/login)
+
+![](https://gyazo.com/d09523a85b626d63d27426d83a894713.png)
+
+#### Team Collaboration Insights during Sprint
+
+Insights del repositorio: [https://github.com/William062004/MedSync-Api](https://github.com/William062004/MedSync-Api)
+
+![](https://gyazo.com/ab73adaccfb4538732f2ae32470da86f.png)
+
+Insights del repositorio: [https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend](https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend)
+
+![](https://gyazo.com/dba3e74b392d0e953cce3207addc8a52.png)
+
 # Conclusiones
 
 - Realizar una correcta detección de bounded contexts es crucial para poder identificar los servicios que se desarrollarán en la solución.
@@ -1033,4 +1107,19 @@ En este sprint, desarrollamos la landing page del proyecto, para la cual usamos 
 
 **Anexo 1**
 
-Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EaQvOOIttDFKt8FSMPzlqgoB76xM4hqbUw4pZFTKLzBITQ?e=kq5WWo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EaQvOOIttDFKt8FSMPzlqgoB76xM4hqbUw4pZFTKLzBITQ?e=kq5WWo)
+- Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EaQvOOIttDFKt8FSMPzlqgoB76xM4hqbUw4pZFTKLzBITQ?e=kq5WWo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EaQvOOIttDFKt8FSMPzlqgoB76xM4hqbUw4pZFTKLzBITQ?e=kq5WWo)
+
+**Repositorio del landing page:**<br>
+[https://github.com/EUrbizagastegui/MedSync-Landing-Page](https://github.com/EUrbizagastegui/MedSync-Landing-Page)
+
+**Repositorio de la aplicación móvil:**<br>
+[https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend-Mobile](https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend-Mobile)
+
+**Repositorio de la app web:**<br>
+[https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend](https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Frontend)
+
+**Repositorio del landing page:**<br>
+[https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Api](https://github.com/Desarrllo-de-Soluciones-IoT-Grupo-4/MedSync-Api)
+
+**App Web Desplegada:**<br>
+[https://med-sync-frontend-4bb8.vercel.app/](https://med-sync-frontend-4bb8.vercel.app/)
